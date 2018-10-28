@@ -46,5 +46,4 @@ public class VerifyNewLabelCreated extends TestBase {
 	public String labelName(){
 		return config.getProperty("label");
 	}
-	
 }
