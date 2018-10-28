@@ -43,5 +43,4 @@ public class VefiryMailsWithAttachment extends TestBase {
 		}
 		return count;
 	}
-
 }
