@@ -30,7 +30,7 @@ public class TestBase {
 				fis = new FileInputStream((System.getProperty("user.dir"))
 						+ "\\src\\main\\java\\com\\qa\\google\\TestConfig\\config.properties");
 			} catch (FileNotFoundException e) {
-				e.printStackTrace();
+				e.printStackTrace();   
 			}
 			try {
 				config.load(fis);
