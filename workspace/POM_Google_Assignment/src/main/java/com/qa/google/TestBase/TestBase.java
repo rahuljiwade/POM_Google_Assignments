@@ -23,14 +23,14 @@ public class TestBase {
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static WebDriverWait wait;
 
-	@BeforeSuite
-	public void setUp() throws InterruptedException {  
+	@BeforeSuite    
+	public void setUp() throws InterruptedException {    
 		if (driver == null) {
 			try {
 				fis = new FileInputStream((System.getProperty("user.dir"))
 						+ "\\src\\main\\java\\com\\qa\\google\\TestConfig\\config.properties");
 			} catch (FileNotFoundException e) {
-				e.printStackTrace();   
+				e.printStackTrace();      
 			}
 			try {
 				config.load(fis);
