@@ -24,7 +24,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 
 	@BeforeSuite    
-	public void setUp() throws InterruptedException {    
+	public void setUp() throws InterruptedException {       
 		if (driver == null) {
 			try {
 				fis = new FileInputStream((System.getProperty("user.dir"))
