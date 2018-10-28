@@ -10,7 +10,6 @@
 	<name>POM_Google_Assignment</name>
 	<url>http://maven.apache.org</url>
 
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jre.level>1.8</jre.level>
@@ -99,7 +98,7 @@
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>2.41.2</version>
-			
+
 		</dependency>
 
 
