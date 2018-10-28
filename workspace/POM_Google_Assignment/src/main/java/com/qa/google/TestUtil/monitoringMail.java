@@ -83,7 +83,6 @@ public class monitoringMail {
 	}
 
 	private class SMTPAuthenticator extends javax.mail.Authenticator {
-
 		public PasswordAuthentication getPasswordAuthentication() {
 			String username = TestConfig.from;
 			String password = TestConfig.password;
