@@ -30,3 +30,5 @@ public class VerifyComposeMail extends TestBase {
 		return wait.until(ExpectedConditions.visibilityOf(composemailbox)).isDisplayed();
 	}
 }
+
+
