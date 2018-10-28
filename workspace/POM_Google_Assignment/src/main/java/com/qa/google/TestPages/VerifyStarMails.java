@@ -12,7 +12,6 @@ import com.qa.google.TestBase.TestBase;
 public class VerifyStarMails extends TestBase {
 
 	// Using Page Factory
-
 	@FindBy(id = "gbwa")
 	WebElement googleapps;
 
