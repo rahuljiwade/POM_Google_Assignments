@@ -11,5 +11,4 @@ public class TestConfig {
 	public static String messageBody = "TestMessage";
 	public static String attachmentPath = System.getProperty("user.dir") + "/Reports.zip";
 	public static String attachmentName = "reports.zip";
-
 }
