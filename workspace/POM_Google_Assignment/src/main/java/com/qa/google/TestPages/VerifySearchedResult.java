@@ -58,7 +58,6 @@ public class VerifySearchedResult extends TestBase {
 		int c = totalmail / 50;
 		int count = 0;
 		for (int i = 0; i < c + 1; i++) {
-
 			count = count + mailonsinglepage.size();
 			wait.until(ExpectedConditions.visibilityOf((gmailinboxnext))).click();
 			Thread.sleep(3000);
