@@ -26,7 +26,7 @@ public class TestBase {
 	@BeforeSuite
 	public void setUp() throws InterruptedException {
 		if (driver == null) {
-			try {
+			try {  
 				fis = new FileInputStream((System.getProperty("user.dir"))
 						+ "\\src\\main\\java\\com\\qa\\google\\TestConfig\\config.properties");
 			} catch (FileNotFoundException e) {
