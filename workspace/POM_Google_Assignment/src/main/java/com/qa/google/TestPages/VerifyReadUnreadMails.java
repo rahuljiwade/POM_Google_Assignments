@@ -70,8 +70,6 @@ public class VerifyReadUnreadMails extends TestBase {
 	public int totalMails() {
 		String gmailtotalmails = wait.until(ExpectedConditions.visibilityOf(gmailtotalmail)).getText();
 		int totalmail = Integer.parseInt(gmailtotalmails);
-
 		return totalmail;
-
 	}
 }
