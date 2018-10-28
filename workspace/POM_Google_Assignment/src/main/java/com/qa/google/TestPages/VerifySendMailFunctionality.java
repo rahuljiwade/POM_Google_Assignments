@@ -61,7 +61,6 @@ public class VerifySendMailFunctionality extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(sentbtn)).click();
 		//List<WebElement> sentmail = wait.until(ExpectedConditions.visibilityOfAllElements(sentmails));
 		sentmails.get(0).click();
-		
 		String mailtext = wait.until(ExpectedConditions.visibilityOf(testmailtext)).getText();
 		return mailtext;
 	}
