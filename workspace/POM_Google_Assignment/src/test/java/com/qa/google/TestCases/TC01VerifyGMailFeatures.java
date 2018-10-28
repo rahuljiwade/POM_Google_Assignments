@@ -15,6 +15,7 @@ import com.qa.google.TestPages.VerifyReadUnreadMails;
 import com.qa.google.TestPages.VerifySearchedResult;
 import com.qa.google.TestPages.VerifySettingPage;
 import com.qa.google.TestPages.VerifyStarMails;
+
 @Listeners(CustomListner.class)
 public class TC01VerifyGMailFeatures extends TestBase {
 
@@ -66,11 +67,6 @@ public class TC01VerifyGMailFeatures extends TestBase {
 
 	}
 
-	/*
-	 * Verify Mails sent successfully or not Created By..>>Someshwar Tondare
-	 * Date:19/10/2018
-	 */
-
 	@Test(dependsOnMethods = "VerifyComposeMailTest")
 	public void VerifySendMailFunctionalityTest() throws InterruptedException {
 
@@ -84,28 +80,18 @@ public class TC01VerifyGMailFeatures extends TestBase {
 
 	}
 
-	/*
-	 * Count Search Mail through result Created By..>>Someshwar Tondare
-	 * Date:20/10/2018
-	 */
-
 	@Test(dependsOnMethods = "VerifySendMailFunctionalityTest")
 	public void VerifySearchedResultTest() throws InterruptedException {
 
 		VerifySearchedResult verifysearch = new VerifySearchedResult();
 		log.info("VerifySearchedResultTest Test Case Started");
 		int totalsearch = verifysearch.toatalSearchMail();
-		int totalsearchall=verifysearch.totalSearch();
+		int totalsearchall = verifysearch.totalSearch();
 		softassert.assertEquals(totalsearch, totalsearchall, "Total search mail not matched");
 		softassert.assertAll();
 		log.info("VerifySearchedResultTest Test Case completed");
 
 	}
-
-	/*
-	 * Count Attached Mails In Inbox Created By..>>Someshwar Tondare
-	 * Date:21/10/2018
-	 */
 
 	@Test(dependsOnMethods = "VerifySearchedResultTest")
 	public void VefiryMailsWithAttachmentTest() throws InterruptedException {
@@ -118,10 +104,6 @@ public class TC01VerifyGMailFeatures extends TestBase {
 
 	}
 
-	/*
-	 * Verify Setting Page Created By..>>Someshwar Tondare Date:22/10/2018
-	 */
-
 	@Test(dependsOnMethods = "VefiryMailsWithAttachmentTest")
 	public void VerifySettingPageTest() throws InterruptedException {
 		log.info("settingPage Test Case Started");
@@ -132,11 +114,6 @@ public class TC01VerifyGMailFeatures extends TestBase {
 		log.info("settingPage Test Case Passed Successfully");
 
 	}
-
-	/*
-	 * Create New Label And Label Name Is Testing Created By..>>Someshwar
-	 * Tondare Date:22/10/2018
-	 */
 
 	@Test(dependsOnMethods = "VerifySettingPageTest")
 	public void VerifyNewLabelCreatedTest() throws InterruptedException {
@@ -149,11 +126,6 @@ public class TC01VerifyGMailFeatures extends TestBase {
 		softassert.assertAll();
 		log.info("VerifyNewLabelCreatedTest Test Case completed");
 	}
-
-	/*
-	 * Verify Inbox Mail Is Moved Into Created Label Created By..>>Someshwar
-	 * Tondare Date:23/10/2018
-	 */
 
 	@Test(dependsOnMethods = "VerifyNewLabelCreatedTest")
 	public void VerifyMailMoveToLabelTest() throws InterruptedException {
