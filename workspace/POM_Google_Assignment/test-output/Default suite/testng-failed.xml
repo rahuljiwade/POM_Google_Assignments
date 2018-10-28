@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.google.TestCases.TC01VerifyGMailFeatures">
+        <methods>
+          <include name="VerifyMailMoveToLabelTest"/>
+          <include name="setUp"/>
+          <include name="VerifySendMailFunctionalityTest"/>
+          <include name="VerifyNewLabelCreatedTest"/>
+          <include name="VerifyStarMailsTest"/>
+          <include name="VerifyComposeMailTest"/>
+          <include name="VefiryMailsWithAttachmentTest"/>
+          <include name="VerifySearchedResultTest"/>
+          <include name="VerifyReadUnreadMailsTest"/>
+          <include name="VerifySettingPageTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qa.google.TestCases.TC01VerifyGMailFeatures -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Google Mail Test Applictaion Suite" duration-ms="277529" started-at="2018-10-28T10:28:05Z" finished-at="2018-10-28T10:32:43Z">
+    <groups>
+    </groups>
+    <test name="Google Mail Test" duration-ms="277529" started-at="2018-10-28T10:28:05Z" finished-at="2018-10-28T10:32:43Z">
+      <class name="com.qa.google.TestCases.TC01VerifyGMailFeatures">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="setUp" is-config="true" duration-ms="33486" started-at="2018-10-28T10:27:32Z" finished-at="2018-10-28T10:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="VerifyStarMailsTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifyStarMailsTest" duration-ms="86634" started-at="2018-10-28T10:28:06Z" finished-at="2018-10-28T10:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStarMailsTest -->
+        <test-method status="PASS" signature="VerifyReadUnreadMailsTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifyReadUnreadMailsTest" duration-ms="80345" started-at="2018-10-28T10:29:32Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifyStarMailsTest" finished-at="2018-10-28T10:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReadUnreadMailsTest -->
+        <test-method status="PASS" signature="VerifyComposeMailTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifyComposeMailTest" duration-ms="1517" started-at="2018-10-28T10:30:53Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifyReadUnreadMailsTest" finished-at="2018-10-28T10:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyComposeMailTest -->
+        <test-method status="PASS" signature="VerifySendMailFunctionalityTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifySendMailFunctionalityTest" duration-ms="12869" started-at="2018-10-28T10:30:54Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifyComposeMailTest" finished-at="2018-10-28T10:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySendMailFunctionalityTest -->
+        <test-method status="PASS" signature="VerifySearchedResultTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifySearchedResultTest" duration-ms="24550" started-at="2018-10-28T10:31:07Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifySendMailFunctionalityTest" finished-at="2018-10-28T10:31:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchedResultTest -->
+        <test-method status="PASS" signature="VefiryMailsWithAttachmentTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VefiryMailsWithAttachmentTest" duration-ms="39011" started-at="2018-10-28T10:31:32Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifySearchedResultTest" finished-at="2018-10-28T10:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VefiryMailsWithAttachmentTest -->
+        <test-method status="PASS" signature="VerifySettingPageTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifySettingPageTest" duration-ms="8099" started-at="2018-10-28T10:32:11Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VefiryMailsWithAttachmentTest" finished-at="2018-10-28T10:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySettingPageTest -->
+        <test-method status="PASS" signature="VerifyNewLabelCreatedTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifyNewLabelCreatedTest" duration-ms="13664" started-at="2018-10-28T10:32:19Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifySettingPageTest" finished-at="2018-10-28T10:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewLabelCreatedTest -->
+        <test-method status="PASS" signature="VerifyMailMoveToLabelTest()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="VerifyMailMoveToLabelTest" duration-ms="10555" started-at="2018-10-28T10:32:32Z" depends-on-methods="com.qa.google.TestCases.TC01VerifyGMailFeatures.VerifyNewLabelCreatedTest" finished-at="2018-10-28T10:32:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyMailMoveToLabelTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.qa.google.TestCases.TC01VerifyGMailFeatures@dc24521]" name="close" is-config="true" duration-ms="416" started-at="2018-10-28T10:32:43Z" finished-at="2018-10-28T10:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.qa.google.TestCases.TC01VerifyGMailFeatures -->
+    </test> <!-- Google Mail Test -->
+  </suite> <!-- Google Mail Test Applictaion Suite -->
+</testng-results>
