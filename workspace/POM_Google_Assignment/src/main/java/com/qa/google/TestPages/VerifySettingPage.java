@@ -34,3 +34,4 @@ public class VerifySettingPage extends TestBase {
 		return wait.until(ExpectedConditions.visibilityOf(settingtext)).isDisplayed();
 	}
 }
+
